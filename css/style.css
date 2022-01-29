@@ -198,3 +198,204 @@ nav ul a:hover {
     width: 50%;
   }
 }
+
+/* project section  */
+
+#projects{
+  padding: 0 0 100px 0;
+  background-color: var(--white);
+}
+
+
+.title {
+  margin: 40px 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--thirdrey);
+  text-align: center;
+}
+
+.title-underline {
+  width: 200px;
+  border: 3px solid var(--main);
+  margin: 0 auto;
+}
+
+.project{
+  background: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0, 0.9));
+  overflow: hidden;
+}
+
+.project img{
+  width: 100%;
+  display: block;
+  transition: fade 2s ease, transform 2s ease;
+}
+
+.project img:hover{
+  opacity: 0.3;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media screen and (min-width:576px) {
+  .projects-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project{
+    flex: 0 0 calc(50%);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .project{
+    flex: 0 0 calc(33.33%);
+  }
+}
+ 
+/* end project  */
+
+/* about section  */
+#about{
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url(/img/about-bcg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card{
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align:center;
+  padding: 60px 40px;
+}
+
+.about-card h3{
+  font-size: 40px;
+  text-transform:capitalize;
+}
+
+.about-card .fas{
+  font-size: 60px;
+  color: var(--main);
+  margin: 20px 0;
+}
+
+.about-card p{
+  line-height: 1.8;
+}
+
+@media screen and (min-width:776px) {
+  .about-card{
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+  .about-card p{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* end  */
+
+/* filler section  */
+#filler{
+  min-height: 80vh;
+  background:url(/img/filler-bcg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* end  */
+
+/* contact sectiom  */
+#contact{
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/about-bcg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-card{
+  flex: 0 0 80%;
+  padding: 40px;
+  background-color:rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card form{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60%;
+}
+
+form h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form input,form textarea{
+  margin: 10px 0;
+  padding: 5px;
+  border: 3px solid var(--main);
+}
+
+form input::placeholder
+form textarea::placeholder{
+  text-transform: uppercase;
+  color: var(--secondery);
+}
+
+.form-btn{
+margin: 20px;
+font-size: 20px;
+border-radius: 40px;
+padding: 5px;
+background: var(--main);
+color:var(--white);
+transition: color 1s ease-in-out, background 1s ease-in-out;
+}
+
+.form-btn:hover{
+  color: var(--main);
+  background-color: var(--white);
+}
+
+/* end  */
+
+/* footer section  */
+footer{
+  background: var(--secondery);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-icons a{
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 10px 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--secondery);
+}
+
+footer p{
+  color:var(--white);
+  font-size: 20px;
+}
